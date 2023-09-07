@@ -4,3 +4,4 @@ streamlit
 ipython
 ipywidgets
 streamlit-aggrid
+openpyxl

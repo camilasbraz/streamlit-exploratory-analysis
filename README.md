@@ -49,5 +49,7 @@ Licensed under the MIT LICENSE.
 
 #### Future work:
 
-https://ydata-profiling.ydata.ai/docs/master/pages/use_cases/comparing_datasets.html
-https://ydata-profiling.ydata.ai/docs/master/pages/use_cases/time_series_datasets.html
+- https://ydata-profiling.ydata.ai/docs/master/pages/use_cases/comparing_datasets.html
+- https://ydata-profiling.ydata.ai/docs/master/pages/use_cases/time_series_datasets.html
+- Check json files in advanced options
+- https://ydata-profiling.ydata.ai/docs/master/pages/use_cases/custom_report_appearance.html
