@@ -1,6 +1,27 @@
-# Stramlit exploratory analysis app with pandas profiling
+# Stramlit exploratory analysis app with ydata profiling
 
-DESCREVER APLICAÇÃO
+This is a Streamlit application that allows you to perform automated Exploratory Data Analysis (EDA) on datasets loaded from CSV or Excel files. The app has been developed using the `ydata_profiling` package to generate detailed EDA reports.
+
+## Access the Application
+
+You can access the online application [here](https://eda-automatic-analysis.streamlit.app/).
+
+## Usage
+
+1. Access the application using the provided link above.
+2. In the left sidebar, upload your CSV or Excel file.
+3. Choose whether you want to include all columns in the report or select a subset of them.
+4. Select the analysis mode: "Minimal" or "Complete."
+5. If desired, check the "Handle sensitive information" option to deal with sensitive data.
+6. If desired, check the "Load JSON dataset type schema" option and upload a JSON schema file.
+7. If desired, check the "Load JSON column descriptions" option and upload a JSON column descriptions file.
+8. Click the "Generate Report" button to initiate the analysis.
+9. Wait for processing and report generation.
+10. Download the generated report by clicking the "Download Report" button.
+
+## Contact
+
+For questions or feedback, please contact [camilabraz03@gmail.com](mailto:camilabraz03@gmail.com).
 
 ## Exploratory Data Analysis (EDA)
 

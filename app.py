@@ -56,7 +56,7 @@ if uploaded_file is not None:
 
 
     with st.sidebar.expander("Advanced Options"):
-        sensitive = st.checkbox("Handle sensitive information?")
+        sensitive_info = st.checkbox("Handle sensitive information?")
         schema = st.checkbox("Load JSON dataset type schema?")
         if schema:
             schema_json = st.sidebar.file_uploader("Upload JSON dataset type schema file", type=["json"])
@@ -89,9 +89,12 @@ if uploaded_file is not None:
             df,
             explorative=True,
             title=title,
-            mode=mode,  # Use the selected mode
-            schema=schema_json if schema else None,  # Use the schema if selected
-            descriptions=desc_json if desc else None  # Use descriptions if selected
+            mode=mode,
+            duplicates=None if sensitive_info else 'raise',  
+            samples=None if sensitive_info else {'head': 5}, 
+            sensitive=sensitive_info, 
+            schema=schema_json if schema else None,
+            descriptions=desc_json if desc else None
         )
 
         progress_percent += 15
