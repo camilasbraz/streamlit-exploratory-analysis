@@ -1,0 +1,6 @@
+pandas
+ydata-profiling
+streamlit
+ipython
+ipywidgets
+streamlit-aggrid
