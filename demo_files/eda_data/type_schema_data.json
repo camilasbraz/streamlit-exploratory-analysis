@@ -1,0 +1,20 @@
+{
+    "columns": [
+        "Name",
+        "Species",
+        "Gender",
+        "Height",
+        "Weight",
+        "Planet",
+        "Status"
+    ],
+    "data_type": [
+        "Categorical",
+        "Categorical",
+        "Categorical",
+        "Numeric",
+        "Numeric",
+        "Categorical",
+        "Categorical"
+    ]
+}

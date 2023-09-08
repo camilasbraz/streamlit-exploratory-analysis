@@ -1,0 +1,15 @@
+Name,Species,Gender,Height,Weight,Planet,Status
+Luke Skywalker,Human,Male,172,77,Tatooine,Alive
+Leia Organa,Human,Female,150,49,Alderaan,Alive
+Han Solo,Human,Male,180,80,Corellia,Alive
+Chewbacca,Wookiee,Male,228,112,Kashyyyk,Alive
+Obi-Wan Kenobi,Human,Male,182,77,Stewjon,Deceased
+Darth Vader,Human,Male,202,136,Tatooine,Deceased
+Yoda,Yoda,Male,66,17,Dagobah,Deceased
+Princess Amidala,Human,Female,185,45,Naboo,Deceased
+R2-D2,Astromech Droid,Unspecified,96,32,Naboo,Alive
+C-3PO,Protocol Droid,Unspecified,167,75,Tatooine,Alive
+Padmé Amidala,Human,Female,165,45,Naboo,Deceased
+Mace Windu,Human,Male,188,84,Haruun Kal,Deceased
+Qui-Gon Jinn,Human,Male,193,89,Coruuscant,Deceased
+Jar Jar Binks,Gungan,Male,196,66,Naboo,Alive

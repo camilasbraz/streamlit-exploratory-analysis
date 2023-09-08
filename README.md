@@ -19,9 +19,9 @@ You can access the online application [here](https://eda-automatic-analysis.stre
 9. Wait for processing and report generation.
 10. Download the generated report by clicking the "Download Report" button.
 
-## Contact
+https://ydata-profiling.ydata.ai/docs/master/pages/getting_started/concepts.html
 
-For questions or feedback, please contact [camilabraz03@gmail.com](mailto:camilabraz03@gmail.com).
+Numerical should be numetic
 
 ## Exploratory Data Analysis (EDA)
 
@@ -70,7 +70,12 @@ Licensed under the MIT LICENSE.
 
 #### Future work:
 
-- https://ydata-profiling.ydata.ai/docs/master/pages/use_cases/comparing_datasets.html
-- https://ydata-profiling.ydata.ai/docs/master/pages/use_cases/time_series_datasets.html
-- Check json files in advanced options
-- https://ydata-profiling.ydata.ai/docs/master/pages/use_cases/custom_report_appearance.html
+- [Comparing Datasets](https://ydata-profiling.ydata.ai/docs/master/pages/use_cases/comparing_datasets.html): Explore the documentation on comparing datasets using ydata_profiling.
+
+- [Time Series Datasets](https://ydata-profiling.ydata.ai/docs/master/pages/use_cases/time_series_datasets.html): Refer to the documentation for handling time series datasets with ydata_profiling.
+
+- Check JSON Files in Advanced Options: Review and implement support for JSON files in the advanced options section of the application.
+
+- [Custom Report Appearance](https://ydata-profiling.ydata.ai/docs/master/pages/use_cases/custom_report_appearance.html): Investigate customizing the appearance of the generated EDA reports using ydata_profiling.
+
+- https://ydata-profiling.ydata.ai/docs/master/pages/advanced_usage/available_settings.html
