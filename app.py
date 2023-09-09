@@ -1,4 +1,5 @@
 import streamlit as st
+from streamlit_pandas_profiling import st_profile_report
 import pandas as pd
 from ydata_profiling import ProfileReport
 from st_aggrid import AgGrid
@@ -175,7 +176,7 @@ if uploaded_file is not None:
         title_html = uploaded_file.name.split(".")[0].capitalize()  + "_EDA_Report" + '.html'
         st.download_button(label="Download Report", data=export_html, file_name=title_html)
 
-        profile.to_notebook_iframe()
+        st_profile_report(profile)
 
 else:
     st.warning("Plase upload your CSV or XLSX file.")

@@ -2,6 +2,8 @@
 
 This is a Streamlit application that allows you to perform automated Exploratory Data Analysis (EDA) on datasets loaded from CSV or Excel files. The app has been developed using the `ydata_profiling` package to generate detailed EDA reports.
 
+datasets: https://www.springboard.com/blog/data-science/15-fun-datasets-to-analyze/
+
 ## Access the Application
 
 You can access the online application [here](https://eda-automatic-analysis.streamlit.app/).

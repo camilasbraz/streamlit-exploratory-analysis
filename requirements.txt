@@ -5,3 +5,4 @@ ipython
 ipywidgets
 streamlit-aggrid
 openpyxl
+streamlit_pandas_profiling
