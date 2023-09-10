@@ -83,4 +83,4 @@ Licensed under the MIT LICENSE.
 
 - [Custom Report Appearance](https://ydata-profiling.ydata.ai/docs/master/pages/use_cases/custom_report_appearance.html): Investigate customizing the appearance of the generated EDA reports using ydata_profiling.
 
-- [Settings] (https://ydata-profiling.ydata.ai/docs/master/pages/advanced_usage/available_settings.html): Investigate more settings.
+- [Settings](https://ydata-profiling.ydata.ai/docs/master/pages/advanced_usage/available_settings.html): Investigate more settings.
