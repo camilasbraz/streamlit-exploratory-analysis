@@ -3,10 +3,15 @@ from streamlit_pandas_profiling import st_profile_report
 import pandas as pd
 from ydata_profiling import ProfileReport
 from st_aggrid import AgGrid
+from st_aggrid.grid_options_builder import GridOptionsBuilder
 import datetime
 import json
 import io
 import os
+
+from ydata_profiling.model.typeset import ProfilingTypeSet
+typeset = ProfilingTypeSet()
+typeset.plot_graph(dpi=100)
 
 # URLs para ícone da página e imagem
 favicon_url = "assets/favicon.ico"
@@ -91,9 +96,14 @@ if uploaded_file is not None:
     
     # Display the raw data
     st.subheader("Data Content")
+
+    gd = GridOptionsBuilder.from_dataframe(df)
+    gd.configure_pagination(enabled=True)
+
     grid = AgGrid(
         df,
-        height = '300px')
+        height = '320px'
+        )
     
     if st.button('Generate Report'):
 
@@ -165,17 +175,9 @@ if uploaded_file is not None:
         # Create the ProfileReport instance
         profile = ProfileReport(**profile_parameters)
 
-        import base64
-
-        # Open the PNG image file in binary mode
-        with open("assets/logo.png", "rb") as image_file:
-            # Read the binary data
-            binary_data = image_file.read()
-
-        # Encode the binary data as base64
-        base64_encoded = base64.b64encode(binary_data).decode("utf-8")
-
-        profile.config.html.style.logo = "https://assets.digitalocean.com/django_gunicorn_nginx_2004/articles/new_learners/section-1.png"
+        # https://github.com/madelinekinnaird/Gerrymandr/blob/master/images/az1.PNG
+        # https://github.com/madelinekinnaird/Gerrymandr/blob/master/images/az1.PNG?raw=true
+        profile.config.html.style.logo = "https://github.com/camilasbraz/streamlit-exploratory-analysis/blob/main/assets/logo_4d4d4d.png?raw=true"
 
         progress_percent += 15
         progress_bar.progress(progress_percent)

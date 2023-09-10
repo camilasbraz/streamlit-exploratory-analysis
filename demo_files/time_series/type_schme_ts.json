@@ -8,7 +8,7 @@
         "Volume"
     ],
     "data_type": [
-        "Time Series",
+        "DateTime",
         "Numeric",
         "Numeric",
         "Numeric",

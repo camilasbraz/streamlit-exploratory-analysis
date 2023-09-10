@@ -2,7 +2,7 @@
 
 This is a Streamlit application that allows you to perform automated Exploratory Data Analysis (EDA) on datasets loaded from CSV or Excel files. The app has been developed using the `ydata_profiling` package to generate detailed EDA reports.
 
-datasets: https://www.springboard.com/blog/data-science/15-fun-datasets-to-analyze/
+[Cool datasets](https://www.springboard.com/blog/data-science/15-fun-datasets-to-analyze/)
 
 ## Access the Application
 
@@ -16,14 +16,21 @@ You can access the online application [here](https://eda-automatic-analysis.stre
 4. Select the analysis mode: "Minimal" or "Complete."
 5. If desired, check the "Handle sensitive information" option to deal with sensitive data.
 6. If desired, check the "Load JSON dataset type schema" option and upload a JSON schema file.
-7. If desired, check the "Load JSON column descriptions" option and upload a JSON column descriptions file.
-8. Click the "Generate Report" button to initiate the analysis.
-9. Wait for processing and report generation.
-10. Download the generated report by clicking the "Download Report" button.
+7. Click the "Generate Report" button to initiate the analysis.
+8. Wait for processing and report generation.
+9. Download the generated report by clicking the "Download Report" button or visualize it on the application page.
 
-https://ydata-profiling.ydata.ai/docs/master/pages/getting_started/concepts.html
+<!-- https://ydata-profiling.ydata.ai/docs/master/pages/getting_started/concepts.html -->
 
-Numerical should be numetic
+Available types in json type schema are: Numerical should be Numeric, Categrorical, Booelan and DateTime. There is also the unsupported type.
+You don´t dave to especify all columns types, the program can infer this.
+
+<!-- ```python
+from ydata_profiling.model.typeset import ProfilingTypeSet
+typeset = ProfilingTypeSet()
+typeset.plot_graph(dpi=100)
+
+``` -->
 
 ## Exploratory Data Analysis (EDA)
 
@@ -74,10 +81,6 @@ Licensed under the MIT LICENSE.
 
 - [Comparing Datasets](https://ydata-profiling.ydata.ai/docs/master/pages/use_cases/comparing_datasets.html): Explore the documentation on comparing datasets using ydata_profiling.
 
-- [Time Series Datasets](https://ydata-profiling.ydata.ai/docs/master/pages/use_cases/time_series_datasets.html): Refer to the documentation for handling time series datasets with ydata_profiling.
-
-- Check JSON Files in Advanced Options: Review and implement support for JSON files in the advanced options section of the application.
-
 - [Custom Report Appearance](https://ydata-profiling.ydata.ai/docs/master/pages/use_cases/custom_report_appearance.html): Investigate customizing the appearance of the generated EDA reports using ydata_profiling.
 
-- https://ydata-profiling.ydata.ai/docs/master/pages/advanced_usage/available_settings.html
+- [Settings] (https://ydata-profiling.ydata.ai/docs/master/pages/advanced_usage/available_settings.html): Investigate more settings.
