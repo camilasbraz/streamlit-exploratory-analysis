@@ -98,7 +98,8 @@ if uploaded_file is not None:
 
     grid = AgGrid(
         df_display,
-        width= '100%',  # Set the width to 100%
+        width= '100%', 
+        enable_enterprise_modules=False
 
         )
     
