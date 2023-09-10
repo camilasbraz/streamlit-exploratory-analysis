@@ -9,10 +9,6 @@ import json
 import io
 import os
 
-from ydata_profiling.model.typeset import ProfilingTypeSet
-typeset = ProfilingTypeSet()
-typeset.plot_graph(dpi=100)
-
 # URLs para ícone da página e imagem
 favicon_url = "assets/favicon.ico"
 imagem_url = 'assets/logo.png'
@@ -168,7 +164,7 @@ if uploaded_file is not None:
                     profile_parameters['type_schema'] = type_schema
                 except FileNotFoundError:
                     st.error(f"The file '{json_file_name}' was not found. Please make sure the file exists.")
-        # Remove the temporary file after use
+                # Remove the temporary file after use
                 os.remove('temp_schema.json')
     
         
@@ -177,7 +173,7 @@ if uploaded_file is not None:
 
         # https://github.com/madelinekinnaird/Gerrymandr/blob/master/images/az1.PNG
         # https://github.com/madelinekinnaird/Gerrymandr/blob/master/images/az1.PNG?raw=true
-        profile.config.html.style.logo = "https://github.com/camilasbraz/streamlit-exploratory-analysis/blob/main/assets/logo_4d4d4d.png?raw=true"
+        profile.config.html.style.logo = "https://github.com/camilasbraz/streamlit-exploratory-analysis/blob/main/assets/logo_report.png?raw=true"
 
         progress_percent += 15
         progress_bar.progress(progress_percent)
