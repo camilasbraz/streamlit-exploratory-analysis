@@ -8,9 +8,17 @@ import json
 import io
 import os
 
+# URLs para ícone da página e imagem
+favicon_url = "assets/favicon.ico"
+imagem_url = 'assets/logo.png'
+
+# Configuração da página
+st.set_page_config(page_icon=favicon_url, page_title="EDA Tool | Camila Braz")
 
 # Create a Streamlit app
 st.title("Exploratory Data Analysis: report generator")
+st.sidebar.image(imagem_url)
+# , width = 300
 
 with st.sidebar.expander("About this app"):
     st.write(
@@ -47,7 +55,9 @@ if uploaded_file is not None:
 
     columns_to_analyze = st.sidebar.radio(
         'Select wheter to include all columns in the report or a subset of columns.',
-        ('All columns', 'Subset columns'))
+        ('All columns', 'Subset columns'),
+        key="custom_radio")
+
     
     if columns_to_analyze == 'All columns':
         df = df
@@ -151,11 +161,21 @@ if uploaded_file is not None:
         # Remove the temporary file after use
                 os.remove('temp_schema.json')
     
-
-
-        # Create the ProfileReport instance, excluding 'mode' from the parameters
+        
         # Create the ProfileReport instance
         profile = ProfileReport(**profile_parameters)
+
+        import base64
+
+        # Open the PNG image file in binary mode
+        with open("assets/logo.png", "rb") as image_file:
+            # Read the binary data
+            binary_data = image_file.read()
+
+        # Encode the binary data as base64
+        base64_encoded = base64.b64encode(binary_data).decode("utf-8")
+
+        profile.config.html.style.logo = "https://assets.digitalocean.com/django_gunicorn_nginx_2004/articles/new_learners/section-1.png"
 
         progress_percent += 15
         progress_bar.progress(progress_percent)
@@ -177,6 +197,8 @@ if uploaded_file is not None:
         st.download_button(label="Download Report", data=export_html, file_name=title_html)
 
         st_profile_report(profile)
+
+
 
 else:
     st.warning("Plase upload your CSV or XLSX file.")
